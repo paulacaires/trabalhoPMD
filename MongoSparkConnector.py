@@ -6,7 +6,7 @@ from pyspark.sql.functions import *
 spark = SparkSession.\
         builder.\
         appName("MongoSparkConnector").\
-        config('spark.jars.packages', 'org.mongodb.spark:mongo-spark-connector_2.13:10.4.0').\
+        config('spark.jars.packages', 'org.mongodb.spark:mongo-spark-connector_2.12:10.4.0').\
         getOrCreate()
 
 connection_uri = 'mongodb+srv://paulacaires:paula@paula.d7teqh5.mongodb.net/?retryWrites=true&w=majority&appName=Paula'
